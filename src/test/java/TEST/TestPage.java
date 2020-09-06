@@ -5,7 +5,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.ElementNotInteractableException.*;
 import BASE.BaseClass;
 import org.openqa.selenium.WebDriver;
-import sun.awt.SunHints;
 
 import java.util.List;
 import java.util.Random;
@@ -45,7 +44,7 @@ public class TestPage extends BaseClass
 
     }
 
-    public void addRnd() throws InterruptedException
+    public void addRnd()
     {
         List<WebElement> bilgisayarlar = Driver.findElements(By.cssSelector(RANDOMPC));
         bilgisayarlar.get(new Random().nextInt(bilgisayarlar.size())).click();

@@ -1,6 +1,5 @@
 package BASE;
 
-import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.By;
